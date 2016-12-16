@@ -23,7 +23,7 @@ public class MyRegistry {
 	            .println("registry: running on host " + InetAddress.getLocalHost());
 
 	    // create the registry on the local machine, on the default port number
-	    LocateRegistry.createRegistry(REGISTRY_PORT);
+	    LocateGlobalRegistry.createRegistry();
 	    System.out.println("registry: listening on port " + REGISTRY_PORT);
 
 	    // block forever

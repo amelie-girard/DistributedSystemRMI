@@ -6,6 +6,7 @@ import java.util.Arrays;
 import java.util.List;
 
 import Common.Sorter;
+import server.LocateGlobalRegistry;
 
 
 
@@ -31,7 +32,7 @@ public class Client {
   public static void main(String[] args) throws Exception {
 
     // locate the registry that runs on the remote object's server
-    Registry registry = LocateRegistry.getRegistry(SERVICE_HOST);
+    Registry registry = LocateGlobalRegistry.getRegistry(SERVICE_HOST);
     System.out.println("client: retrieved registry");
 
     // retrieve the stub of the remote object by its name
